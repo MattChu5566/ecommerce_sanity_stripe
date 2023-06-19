@@ -6,6 +6,7 @@ Some new features/modifications by myself:
 - Hand-crafted carousel in the home page hero banner.
 - Rewrite CSS with Tailwind.
 - Using intercepting routes in NextJS to present the image modal.
+- Add a loading page.
 - Store cart info. in localStorage.
 - Remove unnecessary React state.
 
