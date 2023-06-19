@@ -8,7 +8,6 @@ import { useStateContext } from '../context/StateContext'
 import { Product } from './index'
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 
 const ProductClient = ({ product, products, imgUrl }) => {
     const { image, name, price, details, slug } = product;
@@ -22,8 +21,6 @@ const ProductClient = ({ product, products, imgUrl }) => {
       setShowCart(true);
     }
 
-    const pathName = usePathname();
-
     return (
         <div>
           <div className='product-detail-container mt-10 mx-[50px] flex flex-wrap justify-evenly gap-10 min-h-screen'>
@@ -31,7 +28,7 @@ const ProductClient = ({ product, products, imgUrl }) => {
             <div className='min-w-min'>
               <div className='image-container w-64 h-64 mb-10 p-5 border-black rounded-xl mx-auto flex items-center'>
                 {image && 
-                  <Link href={pathName + '/img/' + index}>
+                  <Link href={ '/product/' + slug.current + '/img/' + index}>
                     <img src={(imgUrl[slug.current])[index]} className='product-detail-image'></img>
                   </Link>
                 }               
@@ -69,11 +66,20 @@ const ProductClient = ({ product, products, imgUrl }) => {
               <div className='quantity flex items-center gap-3'>
                 <h3 className='font-bold '>Quantity:</h3>
                 <p className='quantity-desc flex'>
-                  <button type='button' className='minus w-8 h-8 border-2 border-black rounded-md' onClick={decQty}>
+                {
+                  qty > 1 ? 
+                  <button type='button' className='minus w-8 h-8 border-2 border-black rounded-md hover:scale-110 ' onClick={decQty}>
                     <div className='m-auto w-fit'>
                       <AiOutlineMinus />
                     </div>
                   </button>
+                  :
+                  <button type='button' className='minus w-8 h-8 border-2 border-gray-400 text-gray-400 rounded-md'>
+                    <div className='m-auto w-fit'>
+                      <AiOutlineMinus />
+                    </div>
+                  </button>
+                }
                   <button className='num w-8 h-8 text-center'>
                     {qty}
                   </button>

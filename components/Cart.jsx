@@ -41,8 +41,7 @@ const Cart = ({ imgUrl }) => {
           <button 
             type='button'
             className='cart-heading flex items-center my-5 ml-5 font-bold peer hover:text-orange-600'
-            onClick={()=>setShowCart(false)}
-          >
+            onClick={()=>setShowCart(false)}>
             <AiOutlineLeft />
           </button>
           <div className='tooltip invisible peer-hover:visible bg-black text-white rounded-lg p-1 ml-3 font-normal text-sm absolute left-7'>hide</div>       
@@ -58,8 +57,7 @@ const Cart = ({ imgUrl }) => {
               <button
                 type='button'
                 onClick={()=>setShowCart(false)}
-                className='btn bg-black text-white rounded-xl p-3 mt-10 transition-transform duration-300 hover:scale-110'
-              >
+                className='btn bg-black text-white rounded-xl p-3 mt-10 transition-transform duration-300 hover:scale-110'>
                 Back to Home Page
               </button>
             </Link>
