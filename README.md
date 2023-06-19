@@ -1,16 +1,15 @@
 ## About
 This is a practice following the tutorial of [JavaScript Mastery](https://github.com/adrianhajdin/ecommerce_sanity_stripe).
 
-Some custom features/modifications:
-
-- Trying NextJS 13 App router.
-- The carousel in the home page hero banner.
+Some new features/modifications by myself:
+- Trying NextJS 13 App router. The approach to fetch data, create dynamic routes, manipulate server/client component and define route handlers are different from a Page router.
+- Hand-crafted carousel in the home page hero banner.
 - Rewrite CSS with Tailwind.
 - Using intercepting routes in NextJS to present the image modal.
 - Store cart info. in localStorage.
 - Remove unnecessary React state.
 
-Welcome to take a look at the result on [https://ecommerce-sanity-stripe-erfg7glhr-mattchu5566.vercel.app/](https://ecommerce-sanity-stripe-erfg7glhr-mattchu5566.vercel.app/) 
+Welcome to take a look at [https://ecommerce-sanity-stripe-erfg7glhr-mattchu5566.vercel.app/](https://ecommerce-sanity-stripe-erfg7glhr-mattchu5566.vercel.app/) 
 
 ## NextJS
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
