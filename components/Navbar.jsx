@@ -6,7 +6,7 @@ import { AiOutlineShopping } from 'react-icons/ai'
 import { Cart } from './index'
 import { useStateContext } from '@/context/StateContext'
 
-const Navbar = () => {
+const Navbar = ({ imgUrl }) => {
   const { showCart, setShowCart, totalQuantities } = useStateContext();
 
   return (
@@ -22,7 +22,7 @@ const Navbar = () => {
         <span className='cart-item-qty absolute top-0 -right-2 w-5 h-5 bg-red-600 rounded-full text-sm'>{totalQuantities}</span>
       </button>
 
-      {showCart && <Cart />}
+      {showCart && <Cart imgUrl={imgUrl} />}
     </div>
   )
 }

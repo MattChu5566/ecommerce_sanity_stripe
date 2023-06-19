@@ -2,17 +2,18 @@ import React from 'react';
 
 import { ProductClient } from '../../../components/index'
 
-import { client } from '../../../lib/client';
+import { fectchProducts } from '@/lib/fetchProduct';
+import { fetchImgUrl } from '@/lib/fetchImgUrl';
 
 const ProductDetails = async ({ params: {slug} }) => {
-  const query = `*[_type == "product" && slug.current == '${slug}'][0]`;
-  const productsQuery = '*[_type == "product"]';
-
-  const product = await client.fetch(query);
-  const products = await client.fetch(productsQuery);
+  const {product, products} = await fectchProducts(slug);
+  const imgUrl = await fetchImgUrl();
 
   return (
-    <ProductClient product={product} products={products}/>
+    <div>
+      <ProductClient product={product} products={products} imgUrl={imgUrl}/>
+    </div>
+    
   )
 }
 

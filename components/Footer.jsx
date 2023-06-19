@@ -3,11 +3,11 @@ import { AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai'
 
 const Footer = () => {
   return (
-    <div className='footer-container'>
+    <div className='footer-container text-center my-10'>
       <p>
-        2023 芳文社 All rights reserved
+        2023 E-piano store All rights reserved
       </p>
-      <p className='icons'>
+      <p className='icons flex justify-center'>
         <AiFillInstagram />
         <AiOutlineTwitter />
       </p>

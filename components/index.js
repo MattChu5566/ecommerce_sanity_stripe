@@ -6,3 +6,6 @@ export { default as Product } from './Product';
 export { default as Navbar } from './Navbar';
 export { default as Footer } from './Footer';
 export { default as ProductClient } from './ProductClient';
+export { default as ProductCarousel } from './ProductCarousel';
+export { default as FullImgClient } from './FullImgClient';
+export { default as Loading } from './Loading'
