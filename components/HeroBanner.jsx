@@ -3,7 +3,7 @@ import { ProductCarousel } from './index'
 import { urlFor } from '@/lib/client';
 
 const HeroBanner = ({ heroBanner }) => {
-  const bannerImgUrl = {};
+  const bannerImgUrl = [];
 
   heroBanner.image.forEach((img, index) => {
     bannerImgUrl[index] = urlFor(img).url();
