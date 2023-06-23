@@ -10,7 +10,7 @@ Some new features/modifications by myself:
 - Store cart info. in localStorage.
 - Remove unnecessary React state.
 
-Welcome to take a look at [https://ecommerce-sanity-stripe-erfg7glhr-mattchu5566.vercel.app/](https://ecommerce-sanity-stripe-erfg7glhr-mattchu5566.vercel.app/) 
+Welcome to take a look at [https://ecommerce-sanity-stripe-one-sable.vercel.app/](https://ecommerce-sanity-stripe-one-sable.vercel.app/) 
 
 ## NextJS
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
